@@ -1,4 +1,4 @@
-Function DisplayDate() {
+function displaydate() {
     document.getElementById("date").innerHTML = Date();
-    myElement.style.color = "red";
+    document.getElementById("date").style.color = "red"
 }
