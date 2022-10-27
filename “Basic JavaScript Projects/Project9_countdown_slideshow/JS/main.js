@@ -1,3 +1,4 @@
+//countdown function
 function countdown(){
   var seconds = document.getElementById("seconds").value;
 
@@ -15,12 +16,12 @@ function countdown(){
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Next/previous
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+//image
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -38,5 +39,5 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += "active";
 }
