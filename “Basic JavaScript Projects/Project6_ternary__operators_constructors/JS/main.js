@@ -1,10 +1,11 @@
+//comparing
 function Till_Function() {
     var Number_of_products, Can_use;
     Number_of_products = document.getElementById("Number_of_products").value;
     Can_use = (Number_of_products < 10)? "You have enough products":"You have to many products";
     document.getElementById("Till").innerHTML = Can_use + " to use this till";
 }
-
+//new and this
 function Client(Town, Postcode, Age){
     this.Client_Town = Town;
     this.Client_Postcode = Postcode;
@@ -18,7 +19,7 @@ function Details(){
     document.getElementById("New_and_This").innerHTML = 
     "Julia lives in " + Julia.Client_Town + " her postcode is: " + Julia.Client_Postcode + " and she is " + Julia.Client_Age + ".";
 }
-
+//nested function
 function Product_counter(){
     document.getElementById("Nested_Function").innerHTML = Counter();
     function Counter(){
