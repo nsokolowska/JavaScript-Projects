@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza Drill Demo</title>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UFT-8">
+        <meta content="width=device-width,initial-scale=1.0" name="viewport">
+        <script src="Pizza_JavaScript/Pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="Pizza_css/Pizza.css"/>
+    </head>
+    <body>
+        <div id="menuBG">
+            <h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
+            <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+            <form id="frmMenu">
+                <div class="menu-left">
+                    <h3>Size:</h3>
+                        <input class="size" type="radio" name="Size"
+                            value="Personal Pizza">Personal Pizza<br>
+                        <input class="size" type="radio" name="Size"
+                            value="Small Pizza">Small Pizza<br>
+                        <input class="size" type="radio" name="Size"
+                            value="Medium Pizza">Medium Pizza<br>
+                        <input class="size" type="radio" name="Size"
+                            value="Large Pizza">Large Pizza<br>
+                        <input class="size" type="radio" name="Size"
+                            value="Extra Large Pizza">Extra Large Pizza<br>
+                </div>
+                <div class="menu-middle">
+                    <h3>Vegetables:</h3>
+                    <input class="vegatables" type="checkbox" name="Vegatable"
+                        value="Onion">Onion<br>
+                    <input class="vegatables" type="checkbox" name="Vegatable"
+                        value="Tomato">Tomato<br>
+                    <input class="vegatables" type="checkbox" name="Vegatable"
+                        value="Red Pepper">Red Pepper<br>
+                    <input class="vegatables" type="checkbox" name="Vegatable"
+                        value="Mushrooms ">Mushrooms<br>
+                    <input class="vegatables" type="checkbox" name="Vegatable"
+                        value="Olives">Olives<br>
+                    <input class="vegatables" type="checkbox" name="Vegatable"
+                        value="Green Pepper">Green Pepper<br>
+                    <input class="vegatables" type="checkbox" name="Vegatable"
+                        value="Sweetcorn">Sweetcorn<br>
+                </div>
+                <div class="menu-right">
+                    <h3>Metas:</h3>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Pepperoni">Pepperoni<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Sausage">Sausage<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Canadian Bacon">Canadian Bacon<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Ground Beef ">Ground Beef<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Anchovy">Anchovy<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Chicken">Chicken<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Ham">Ham<br>
+                </div>
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
