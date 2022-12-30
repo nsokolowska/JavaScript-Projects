@@ -1,0 +1,36 @@
+/* This container includes our table and our canvas.*/
+.center-conatainer {
+    width: 608px; 
+    margin: 0 auto; /* This property centers our conatiner */
+    margin-top: 50px; /* 50px down from top */
+    text-align:center;
+}
+
+table {
+    border-collapse: collapse; /* This property collapse table borders into 1 border */
+    border-style:hidden; /*This hides outer borders on table */
+}
+
+td {
+    cursor: pointer; /*This property changes the cursor to the index finger hand when we hover over id elements*/
+    border: 4px solid rgba(65, 209, 54, 0.8);
+    padding:0px;
+    width:200px;
+    height:200px;
+}
+
+canvas {
+    position:absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+h1, p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+h1{
+    font-size:50px;
+}
+p{
+    font-size:10px;
+}
