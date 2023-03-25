@@ -6,6 +6,7 @@ There are some small projects I made using JavaScript
 - [Pizza Menu](https://github.com/nsokolowska/JavaScript-Projects/tree/main/Pizza_Project)
 - [Tic-Tac-Toe Game](https://github.com/nsokolowska/JavaScript-Projects/tree/main/TicTacToe)
 - [Calculator](https://github.com/nsokolowska/JavaScript-Projects/tree/main/Calculator)
+- [Weather App](https://github.com/nsokolowska/JavaScript-Projects/tree/main/Weather%20App)
 
 ### Pizza Project
 This project is a menu used to order pizza with a various selection of toppings. It then takes input information and calculates a price for the order.
@@ -15,3 +16,6 @@ The classic game of tic-tac-toe. It randomly rolls dice to select which of the t
 
 ### Calculator
 A basic 4 function calculator. Users can add, subtract, multiply, and divide on a sleek web version of calculator.
+
+### Weather App
+This project is a simple weather application. It takes information about computer locations and depending on location shows current weather information from open weather map services. 
