@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Pizza Drill Demo</title>
+        <title>Pizza Demo</title>
         <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UFT-8">
         <meta content="width=device-width,initial-scale=1.0" name="viewport">
         <script src="Pizza_JavaScript/Pizza.js" defer></script>
@@ -9,56 +9,171 @@
     </head>
     <body>
         <div id="menuBG">
-            <h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
-            <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+            <h1 style="margin:0 0px 0 20px;">Create your pizza</h1>
+            <p>The base price of the pizza includes a tomato base, one vegetable, one topping and one dip.</p>
             <form id="frmMenu">
-                <div class="menu-left">
-                    <h3>Size:</h3>
-                        <input class="size" type="radio" name="Size"
-                            value="Personal Pizza">Personal Pizza<br>
-                        <input class="size" type="radio" name="Size"
-                            value="Small Pizza">Small Pizza<br>
-                        <input class="size" type="radio" name="Size"
-                            value="Medium Pizza">Medium Pizza<br>
-                        <input class="size" type="radio" name="Size"
-                            value="Large Pizza">Large Pizza<br>
-                        <input class="size" type="radio" name="Size"
-                            value="Extra Large Pizza">Extra Large Pizza<br>
+                <button type="button" class="menu-list">Size:</button>
+                <div class="menu">
+                    <div class="menu-inside">
+                        <div class="line">
+                            <input class="size" type="radio" name="Size" value="Small Pizza">
+                            <label>Small Pizza</label>  
+                        </div>
+ 
+                        <div class="line">
+                            <input class="size" type="radio" name="Size" value="Medium Pizza">
+                            <label>Medium Pizza</label>
+                        </div>
+                        <div class="line">
+                            <input class="size" type="radio" name="Size" value="Large Pizza">
+                            <label>Large Pizza</label>
+                        </div>
+                        <div class="line">
+                            <input class="size" type="radio" name="Size" value="Extra Large Pizza">
+                            <label>Extra Large Pizza</label>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="menu-middle">
-                    <h3>Vegetables:</h3>
-                    <input class="vegatables" type="checkbox" name="Vegatable"
-                        value="Onion">Onion<br>
-                    <input class="vegatables" type="checkbox" name="Vegatable"
-                        value="Tomato">Tomato<br>
-                    <input class="vegatables" type="checkbox" name="Vegatable"
-                        value="Red Pepper">Red Pepper<br>
-                    <input class="vegatables" type="checkbox" name="Vegatable"
-                        value="Mushrooms ">Mushrooms<br>
-                    <input class="vegatables" type="checkbox" name="Vegatable"
-                        value="Olives">Olives<br>
-                    <input class="vegatables" type="checkbox" name="Vegatable"
-                        value="Green Pepper">Green Pepper<br>
-                    <input class="vegatables" type="checkbox" name="Vegatable"
-                        value="Sweetcorn">Sweetcorn<br>
+                <button type="button" class="menu-list">Base:</button>
+                <div class="menu">
+                    <div class="menu-inside">
+                        <div class="line">
+                            <input class="base" type="radio" name="Base" value="Tomato Base"/>
+                            <label>Tomato Base </label>  
+                        </div>
+
+                        <div class="line">
+                            <input class="base" type="radio" name="Base" value="Garlic Butter Base">
+                            <label>Garlic Butter Base + &#163;1</label>
+                        </div>
+                        <div class="line">
+                            <input class="base" type="radio" name="Base" value="Creamy Base">
+                            <label>Creamy Base + &#163;1</label>
+                        </div>
+                        <div class="line">
+                            <input class="base" type="radio" name="Base" value="BBG Base">
+                            <label>BBG Base + &#163;2</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu-right">
-                    <h3>Metas:</h3>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Pepperoni">Pepperoni<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Sausage">Sausage<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Canadian Bacon">Canadian Bacon<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Ground Beef ">Ground Beef<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Anchovy">Anchovy<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Chicken">Chicken<br>
-                    <input class="toppings" type="checkbox" name="Topping"
-                        value="Ham">Ham<br>
+                <button type="button" class="menu-list">Vegetables:</button>
+                <div class="menu">
+                    <div class="menu-inside">
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Onion"/>
+                            <label>Onion</label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Garlic"/>
+                            <label>Garlic</label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Artichoke"/>
+                            <label>Artichoke</label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Tomato"/>
+                            <label>Tomato</label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Red Pepper"/>
+                            <label>Red Pepper</label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Mushrooms "/> 
+                            <label>Mushrooms</label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Olives"/>
+                            <label>Olives</label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Green Pepper"/>
+                            <label>Green Pepper</label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Sweetcorn"/>
+                            <label>Sweetcorn </label>
+                        </div>
+                        <div class="line">
+                            <input class="vegetables" type="checkbox" name="Vegetable" value="Broccoli"/>
+                            <label>Broccoli</label>
+                        </div>
+                    </div>
                 </div>
+                <button type="button" class="menu-list">Meats:</button>
+                    <div class="menu">
+                        <div class="menu-inside"> 
+                            <div class="line">
+                                <input class="toppings" type="checkbox" name="Topping" value="Pepperoni"/>
+                                <label>Pepperoni</label>
+                            </div>
+                            <div class="line">
+                                <input class="toppings" type="checkbox" name="Topping"  value="Sausage"/>
+                                <label>Sausage</label>
+                            </div>
+                                
+                            <div class="line">
+                                <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon"/>
+                                <label>Canadian Bacon</label>
+                            </div>
+                            <div class="line">
+                                <input class="toppings" type="checkbox" name="Topping" value="Ground Beef "/>
+                                <label>Ground Beef</label>
+                            </div>
+                        
+                            <div class="line">
+                                <input class="toppings" type="checkbox" name="Topping" value="Anchovy"/>
+                                <label>Anchovy</label>
+                            </div>
+                            <div class="line">
+                                <input class="toppings" type="checkbox" name="Topping" value="Chicken"/>
+                                <label>Chicken</label> 
+                            </div>
+                            <div class="line">
+                                <input class="toppings" type="checkbox" name="Topping" value="Ham"/>
+                                <label>Ham</label>
+                            </div>
+                            <div class="line">
+                                <input class="toppings" type="checkbox" name="Topping" value="Prosciutto"/>
+                                <label>Prosciutto</label>
+                            </div>
+                        </div>
+                       
+                    </div>
+            
+                <button type="button" class="menu-list">Dips:</button>
+                <div class="menu">
+                    <div class="menu-inside">
+                        <div class="line">                        
+                            <input class="dips" type="checkbox" name="Dips" value="Sweet Chilli"/>
+                            <label>Sweet Chilli</label>
+                        </div>
+                        <div class="line">
+                            <input claas="dips" type="checkbox" name="Dips" value="Ketchup"/>
+                            <label>Ketchup</label>
+                        </div>
+                        <div class="line">
+                            <input class="dips" type="checkbox" name="Dips" value="Pesto"/>
+                            <label>Pesto</label>
+                        </div>
+                       
+                        <div class="line">
+                            <input class="dips" type="checkbox" name="Dips" value="Garlic Mayonnaise"/>
+                            <label>Garlic Mayonnaise</label>
+                        </div>
+                        <div class="line">
+                            <input class="dips" type="checkbox" name="Dips" value="Mayonnaise"/>
+                            <label>Mayonnaise</label>	
+                        </div>
+                        <div class="line">
+                            <input class="dips" type="checkbox" name="Dips" value="BBQ"/>
+                            <label>BBQ</label>
+                        </div>
+                    </div>
+                  </div>  
+                <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
                 <div id="cart">
                     <div id="showText"></div>
                     <div id="totalPrice"></div>
